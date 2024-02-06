@@ -12,3 +12,45 @@
 #aboutMeContent {
   display: none;
 }
+#GradButtonContent {
+  display: none;
+}
+#WedButtonContent {
+  display: none;
+}
+#MiscButtonContent {
+  display: none;
+}
+.mainThumbnail {
+  background-image: url("images/DSC00659-Enhanced-NR.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Ensure the body covers the whole viewport */
+}
+#aboutMeIntro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#aboutMeIntro > p {
+  margin-bottom: 1rem;
+  font-size: large;
+  flex: 1;
+}
+#mePicture {
+  flex-basis: 50%;
+  max-width: 50%;
+  height: auto;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  #aboutMeIntro {
+    flex-direction: column;
+  }
+  #mePicture {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
