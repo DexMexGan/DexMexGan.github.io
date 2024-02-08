@@ -9,6 +9,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
+#backgroundC {
+  background-color: rgb(227, 216, 200);
+}
 #aboutMeContent {
   display: none;
 }
@@ -42,11 +45,11 @@
 
 .text-content {
   flex: 1; /* Allows text content to fill available space */
-  margin-left: 40px; /* Adds space between the text and the photo */
+  margin-left: 30px; /* Adds space between the text and the photo */
 }
 .text-content p {
-  margin-bottom: 2px;
-  margin-top: 2px;
+  margin-bottom: 3px;
+  margin-top: 3px;
   font-size: large;
 }
 
