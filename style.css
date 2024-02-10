@@ -9,6 +9,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
+#goHomeLink,
+#aboutMeLink {
+  color: black;
+}
 #backgroundC {
   background-color: rgb(227, 216, 200);
 }
