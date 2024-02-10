@@ -18,6 +18,12 @@
 #GradButtonContent {
   display: none;
 }
+#GradButton {
+  margin-bottom: 20px;
+}
+#WedButton {
+  margin-bottom: 20px;
+}
 #WedButtonContent {
   display: none;
 }
