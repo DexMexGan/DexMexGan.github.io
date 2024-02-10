@@ -60,6 +60,22 @@
   margin-right: 40px;
 }
 
+
+.top-bar{
+  background-color: rgb(190,210,237);
+  position: fixed; /* Added */
+  top: 0; /* Added */
+  left: 0; /* Added */
+  width: 100%; /* Added */
+  z-index: 100; /* Added */
+}
+.top-bar li {
+  background-color: rgb(190,210,237);
+}
+body {
+  padding-top: 60px;
+}
+
 @media (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
