@@ -10,7 +10,9 @@
   transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 #goHomeLink,
-#aboutMeLink {
+#aboutMeLink,
+#portfolioLink,
+#contactLink {
   color: black;
 }
 #backgroundC {
@@ -20,6 +22,12 @@
   display: none;
 }
 #GradButtonContent {
+  display: none;
+}
+#portfolioSection {
+  display: none;
+}
+#contactSection {
   display: none;
 }
 #GradButton {
@@ -70,7 +78,14 @@
   height: auto; /* Maintains aspect ratio */
   margin-right: 40px;
 }
-
+#Gradsection h1,
+#WedSection h1,
+#MiscSection h1,
+#portfolioSection h1,
+#contactSection {
+  text-align: center;
+  margin-top: -5px;
+}
 .top-bar {
   background-color: rgb(190, 210, 237);
   position: fixed; /* Added */

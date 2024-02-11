@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("GradButtonContent").style.display = "none";
       document.getElementById("WedButtonContent").style.display = "none";
       document.getElementById("MiscButtonContent").style.display = "none";
+      document.getElementById("portfolioSection").style.display = "none";
+      document.getElementById("contactSection").style.display = "none";
       document.getElementById("aboutMeContent").style.display = "block";
     });
   document.getElementById("goHomeLink").addEventListener("click", function (e) {
@@ -15,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("GradButtonContent").style.display = "none";
     document.getElementById("WedButtonContent").style.display = "none";
     document.getElementById("MiscButtonContent").style.display = "none";
+    document.getElementById("portfolioSection").style.display = "none";
+    document.getElementById("contactSection").style.display = "none";
     document.getElementById("mainContent").style.display = "block";
   });
   document.getElementById("GradButton").addEventListener("click", function (e) {
@@ -23,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("aboutMeContent").style.display = "none";
     document.getElementById("WedButtonContent").style.display = "none";
     document.getElementById("MiscButtonContent").style.display = "none";
+    document.getElementById("portfolioSection").style.display = "none";
+    document.getElementById("contactSection").style.display = "none";
     document.getElementById("GradButtonContent").style.display = "block";
   });
   document.getElementById("WedButton").addEventListener("click", function (e) {
@@ -31,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("aboutMeContent").style.display = "none";
     document.getElementById("MiscButtonContent").style.display = "none";
     document.getElementById("GradButtonContent").style.display = "none";
+    document.getElementById("portfolioSection").style.display = "none";
+    document.getElementById("contactSection").style.display = "none";
     document.getElementById("WedButtonContent").style.display = "block";
   });
   document.getElementById("MiscButton").addEventListener("click", function (e) {
@@ -39,6 +47,35 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("aboutMeContent").style.display = "none";
     document.getElementById("WedButtonContent").style.display = "none";
     document.getElementById("GradButtonContent").style.display = "none";
+    document.getElementById("portfolioSection").style.display = "none";
+    document.getElementById("contactSection").style.display = "none";
     document.getElementById("MiscButtonContent").style.display = "block";
   });
+  document
+    .getElementById("portfolioLink")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      document.getElementById("mainContent").style.display = "none";
+      document.getElementById("aboutMeContent").style.display = "none";
+      document.getElementById("WedButtonContent").style.display = "none";
+      document.getElementById("GradButtonContent").style.display = "none";
+      document.getElementById("MiscButtonContent").style.display = "none";
+      document.getElementById("contactSection").style.display = "none";
+      // This next line should target 'portfolioSection', not 'portfolioContent' or 'contactContent'.
+      document.getElementById("portfolioSection").style.display = "block";
+    });
+  document
+    .getElementById("contactLink")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      // Hide all sections
+      document.getElementById("mainContent").style.display = "none";
+      document.getElementById("aboutMeContent").style.display = "none";
+      document.getElementById("portfolioSection").style.display = "none";
+      document.getElementById("GradButtonContent").style.display = "none";
+      document.getElementById("WedButtonContent").style.display = "none";
+      document.getElementById("MiscButtonContent").style.display = "none";
+      // Display the contact section
+      document.getElementById("contactSection").style.display = "block";
+    });
 });
