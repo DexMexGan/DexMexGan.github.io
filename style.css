@@ -82,7 +82,7 @@
 #WedSection h1,
 #MiscSection h1,
 #portfolioSection h1,
-#contactSection {
+#contactSection h1{
   text-align: center;
   margin-top: -5px;
 }
