@@ -18,29 +18,17 @@
 #backgroundC {
   background-color: rgb(227, 216, 200);
 }
-#aboutMeContent {
-  display: none;
-}
-#GradButtonContent {
-  display: none;
-}
-#portfolioSection {
-  display: none;
-}
-#contactSection {
-  display: none;
-}
-#GradButton {
-  margin-bottom: 20px;
-}
-#WedButton {
-  margin-bottom: 20px;
-}
-#WedButtonContent {
-  display: none;
-}
+#aboutMeContent,
+#GradButtonContent,
+#portfolioSection,
+#contactSection,
+#WedButtonContent,
 #MiscButtonContent {
   display: none;
+}
+#GradButton,
+#WedButton {
+  margin-bottom: 20px;
 }
 .mainThumbnail {
   background-image: url("images/DSC00659-Enhanced-NR.jpg");
@@ -62,7 +50,9 @@
   padding: 0 20px; /* Adds padding to the left and right of the container */
 }
 
-.text-content {
+.text-content,
+#contactContent,
+#portfolioText {
   flex: 1; /* Allows text content to fill available space */
   margin-left: 30px; /* Adds space between the text and the photo */
 }
@@ -82,9 +72,15 @@
 #WedSection h1,
 #MiscSection h1,
 #portfolioSection h1,
-#contactSection h1{
+#contactSection h1 {
   text-align: center;
   margin-top: -5px;
+}
+
+#emailSection {
+  text-align: center;
+  font-style: italic;
+  font-size: large;
 }
 .top-bar {
   background-color: rgb(190, 210, 237);
