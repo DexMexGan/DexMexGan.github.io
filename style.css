@@ -19,11 +19,7 @@
   background-color: rgb(227, 216, 200);
 }
 #aboutMeContent,
-#GradButtonContent,
-#portfolioSection,
-#contactSection,
-#WedButtonContent,
-#MiscButtonContent {
+#portfolioSection {
   display: none;
 }
 #GradButton,
